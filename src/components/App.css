@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+header {
+    background-color: #CC0000;
+    color: #fff;
+    padding: 30px 5%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+input[type="text"] {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    outline: none;
+    padding: 0 5px;
+    width: 10rem;
+    border-radius: 4px;
+    height: 2rem;
+    font-size: 1.1rem;
+}
+main{
+    width: 95%;
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+div.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    aspect-ratio: 4/5;
+    border-radius: 1.3rem;
+    box-shadow: -3px 3px 0.3rem rgb(190, 190, 190);
+    border: 0.12rem solid black;
+    
+}
+div.card img {
+    width: 100%;
+    max-width: 240px;
+}
+
+@media screen and (max-width: 1250px){
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 950px){
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 650px){
+    main {
+        grid-template-columns: 1fr;
+    }
+}
