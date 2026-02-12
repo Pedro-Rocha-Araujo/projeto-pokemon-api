@@ -4,8 +4,12 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+div.main {
+    margin-bottom: 20px;
+}
 header {
     background-color: #CC0000;
+    box-shadow: -3px 3px 8px rgb(206, 206, 206);
     color: #fff;
     padding: 30px 5%;
     margin-bottom: 20px;

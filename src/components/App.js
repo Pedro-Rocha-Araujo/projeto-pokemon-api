@@ -11,10 +11,9 @@ function App() {
     }, [])
     const getPokemons = () => {
         let endpoints = []
-        for(let i = 1; i<10; i++){
+        for(let i = 1; i<13; i++){
             endpoints.push(`https://pokeapi.co/api/v2/pokemon/${i}`)
         }
-        console.log(endpoints)
         let response = axios.all(endpoints.map((_,i)=> axios.get(_))).then((res)=>{
             setPokemons(res)
         })
