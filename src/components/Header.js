@@ -6,7 +6,7 @@ function Header(props) {
             <h1>Pokedex</h1>
             <nav>
                 <i className="fa-solid fa-magnifying-glass"></i>
-                <input type="text" />
+                <input type="text" onChange={(e)=> props.pokemonsFiltrados(e.target.value)} />
             </nav>
         </header>
     )
