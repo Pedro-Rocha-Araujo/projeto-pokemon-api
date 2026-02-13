@@ -7,4 +7,4 @@
 * HTML5 | CSS3 
 * JavaScript | React
 * Git & GitHub
-## Segue o link para acesso: 
+## Segue o link para acesso: https://pedro-rocha-araujo.github.io/projeto-pokemon-api/
